@@ -6,6 +6,10 @@ const client = new Discord.Client();
 const url = 'https://www.reddit.com/r/dankmemes/top.json?limit=3&t=hour';
 const { DISCORD_TOKEN } = process.env;
 const { prefix } = require('./config');
+const {
+  dankmemes,
+  awwnime,
+} = require('./commands');
 
 client.once('ready', () => {
   if (DISCORD_TOKEN) {
@@ -18,7 +22,7 @@ client.on('message', (message) => {
   if (message.content === `${prefix}`) {
     message.channel.send('Yo Dawg. It\'s me DawgBot');
   }
-  if (message.content === `${prefix} memes`) {
+  if (message.content === `${prefix} ${dankmemes}`) {
     request.get(url, (_err, _response, body) => {
       const memes = JSON.parse(body).data.children;
       for (let i = 0; i < memes.length; i += 1) {
@@ -30,7 +34,7 @@ client.on('message', (message) => {
       }
     });
   }
-  if (message.content === `${prefix} awwnime`) {
+  if (message.content === `${prefix} ${awwnime.command}`) {
     request.get('https://www.reddit.com/r/awwnime/top.json?limit=3&t=day', (_err, _res, body) => {
       const images = getImages(body);
       let i = 1;

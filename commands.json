@@ -1,0 +1,17 @@
+{
+  "dankmemes": {
+    "command": "dankmemes",
+    "help": "Returns /r/dankmemes' top 3 dankmemes of the hour.",
+    "example": "!Dawg dankmemes"
+  },
+  "awwnime": {
+    "command": "awwnime",
+    "help": "Returns /r/awwnime's top 3 pictures of the day.",
+    "example": "!Dawg awwnime"
+  },
+  "insult": {
+    "command": "insult <user>",
+    "help": "Insults the user. Tip: 'user' is the @ name.",
+    "example": "!Dawg insult Dawg"
+  }
+}

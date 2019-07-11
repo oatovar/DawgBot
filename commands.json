@@ -2,12 +2,14 @@
   "dankmemes": {
     "command": "dankmemes",
     "help": "Returns /r/dankmemes' top 3 dankmemes of the hour.",
-    "example": "!Dawg dankmemes"
+    "example": "!Dawg dankmemes",
+    "url": "https://www.reddit.com/r/dankmemes/top.json?limit=3&t=hour"
   },
   "awwnime": {
     "command": "awwnime",
     "help": "Returns /r/awwnime's top 3 pictures of the day.",
-    "example": "!Dawg awwnime"
+    "example": "!Dawg awwnime",
+    "url": "https://www.reddit.com/r/awwnime/top.json?limit=3&t=day"
   },
   "insult": {
     "command": "insult <user>",

@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const request = require('request');
+const { getImages } = require('./utils');
 
 const client = new Discord.Client();
 const url = 'https://www.reddit.com/r/dankmemes/top.json?limit=3&t=hour';
@@ -27,6 +28,20 @@ client.on('message', (message) => {
           .setImage(memes[i].data.url);
         message.channel.send(response);
       }
+    });
+  }
+  if (message.content === `${prefix} awwnime`) {
+    request.get('https://www.reddit.com/r/awwnime/top.json?limit=3&t=day', (_err, _res, body) => {
+      const images = getImages(body);
+      let i = 1;
+      Object.values(images).forEach((image) => {
+        const response = new Discord.MessageEmbed()
+          .setColor('#0099ff')
+          .setTitle(`Awwnime #${i}`)
+          .setImage(image);
+        message.channel.send(response);
+        i += 1;
+      });
     });
   }
 });

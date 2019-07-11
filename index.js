@@ -21,7 +21,7 @@ client.on('message', (message) => {
   if (message.content === `${prefix}`) {
     message.channel.send('Yo Dawg. It\'s me DawgBot');
   }
-  if (message.content === `${prefix} ${dankmemes}`) {
+  if (message.content === `${prefix} ${dankmemes.command}`) {
     request.get(dankmemes.url, (_err, _response, body) => {
       const memes = JSON.parse(body).data.children;
       for (let i = 0; i < memes.length; i += 1) {

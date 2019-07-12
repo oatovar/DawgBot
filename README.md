@@ -9,7 +9,7 @@ Lastly, this project could not occur (or would take a loooot more effort) withou
 ## Running DawgBot
 1. Setup a Discord App. [Documentation](https://discordapp.com/developers/docs/intro)
 2. Clone this repo and navigate to it.
-3. Set the DISCORD_TOKEN env variable using your client key.
+3. Set the `DISCORD_TOKEN` env variable as your client key.
 4. Run npm start. Voila DawgBot should now be running.
 ```sh
 git clone https://github.com/oatovar/DawgBot.git;

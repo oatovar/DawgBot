@@ -1,6 +1,7 @@
 # DawgBot
 
 [![Build Status](https://travis-ci.org/oatovar/DawgBot.svg?branch=master)](https://travis-ci.org/oatovar/DawgBot)
+[![codecov](https://codecov.io/gh/oatovar/DawgBot/branch/master/graph/badge.svg)](https://codecov.io/gh/oatovar/DawgBot)
 
 DawgBot is a discord chatbot that likes to have fun. It's fun and aims to bring fun to your guild whether it's through memes or adorable anime pictures. DawgBot is a side project and I try to actively work on it whenever I can. If you have any feature requests, please feel free to add an issue and I will attempt to add it as quickly as I can. Likewise, if there's a bug I will attempt to fix it as soon as I can, but ask that you please help me by filing an issue.
 

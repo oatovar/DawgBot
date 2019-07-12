@@ -1,7 +1,9 @@
 language: node_js
 node_js:
   - 10
-install: npm install
+install: npm i -g codecov && npm install
+script:
+  - npm run-script codecoverage
 cache:
   directories:
     - node_modules

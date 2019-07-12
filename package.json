@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "nyc mocha"
+    "test": "nyc mocha",
+    "codecoverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "keywords": [],
   "author": "",

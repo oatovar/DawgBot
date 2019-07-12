@@ -18,3 +18,6 @@ cd DawgBot;
 export DISCORD_TOKEN=XXXXXXXXXXXXXXXXXX
 npm start;
 ```
+
+## LICENSE
+This project is licensed using the GNU GPL Version 3 license.

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "nyc --reporter=lcov mocha",
+    "start": "node src/index.js",
+    "test": "nyc --reporter=lcov --reporter=text mocha test/ --recursive --exit",
     "coverage": "codecov"
   },
   "keywords": [],

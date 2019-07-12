@@ -7,4 +7,10 @@ module.exports = {
     });
     return images;
   },
+  stringPrintHelp: (command) => {
+    let helpMsg = '';
+    helpMsg += `${command.command} - ${command.help}\n`;
+    helpMsg += `example: \`${command.example}\`\n`;
+    return helpMsg;
+  },
 };

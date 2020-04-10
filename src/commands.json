@@ -15,5 +15,17 @@
     "command": "insult <user>",
     "help": "Insults the user. Tip: 'user' is the @ name.",
     "example": "!Dawg insult Dawg"
+  },
+  "rule34": {
+    "command": "rule34",
+    "help": "Posts lewd pictures",
+    "example": "!Dawg rule34",
+    "url": "https://rule34.xxx/index.php?page=post&s=view&id="
+  },
+  "smug": {
+    "command": "smug",
+    "help": "Posts the best smug loli faces",
+    "example": "!Dawg smug",
+    "url": "https://smug.moe/smg/"
   }
 }

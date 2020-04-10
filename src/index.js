@@ -8,6 +8,8 @@ const { prefix } = require('./config');
 const {
   dankmemes,
   awwnime,
+  smug,
+  rule34,
 } = require('./commands');
 
 client.once('ready', () => {
@@ -46,6 +48,32 @@ client.on('message', (message) => {
         i += 1;
       });
     });
+  }
+
+  if (message.content === `${prefix} ${rule34.command}`) {
+    try {
+      //7 digit id
+      const smugResponse = rule34.url + Math.floor(Math.random() * 9000000) + 1000000;
+      message.channel.send({
+        files: [smugResponse]
+      })
+    } catch (err) {
+      console.log(err)
+      message.channel.send("Server detected too much lewdness")
+    }
+  }
+
+  if (message.content === `${prefix} ${smug.command}`) {
+    try {
+      //60 possible pics
+      const smugResponse = smug.url + Math.floor(Math.random() * 59) + 1 + ".png"
+      message.channel.send({
+        files: [smugResponse]
+      })
+    } catch (err) {
+      console.log(err)
+      message.channel.send("Server detected too much smuggness")
+    }
   }
 });
 

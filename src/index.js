@@ -75,6 +75,7 @@ client.on('message', (message) => {
       message.channel.send("Server detected too much smuggness")
     }
   }
+  
 });
 
 client.login(DISCORD_TOKEN);
